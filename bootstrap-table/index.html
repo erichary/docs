@@ -16,27 +16,27 @@ redirect_from:
       </div>
       <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
         <h1 class="mb-3 bd-text-purple-bright">
-          {{ site.title }}
+          {{ bootstrap-table.title }}
         </h1>
         <p class="lead">
-          {{ site.description }}
+          {{ bootstrap-table.description }}
         </p>
         <div class="row mx-n2">
           <div class="col-md px-2">
-            <a href="{{ site.baseurl }}/docs/getting-started/introduction/"
+            <a href="{{ bootstrap-table.baseurl }}/docs/getting-started/introduction/"
               class="btn btn-lg btn-bd-primary w-100 mb-3">
               Getting Started
             </a>
           </div>
           <div class="col-md px-2">
-            <a href="{{ site.baseurl }}/docs/getting-started/download/"
+            <a href="{{ bootstrap-table.baseurl }}/docs/getting-started/download/"
               class="btn btn-lg btn-outline-secondary w-100 mb-3">
               Download
             </a>
           </div>
         </div>
         <p class="text-muted">
-          Currently{{ site.current_version }}
+          Currently{{ bootstrap-table.current_version }}
         </p>
         {% include ads.html %}
       </div>
@@ -57,7 +57,7 @@ yarn add bootstrap-table
 
     <hr class="half-rule">
     <a class="btn btn-outline-primary"
-      href="{{ site.baseurl }}/docs/getting-started/download/">
+      href="{{ bootstrap-table.baseurl }}/docs/getting-started/download/">
       Read installation docs
     </a>
   </div>
@@ -65,15 +65,15 @@ yarn add bootstrap-table
   <div class="col-12 col-md-4 p-3 p-md-5 bg-light border border-white">
     <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
     <h3>{% include icons/download.svg width="32" height="32" class="text-primary mb-2" %}CDN</h3>
-    <p>When you only need to include Bootstrap Table’s compiled CSS or JS, use <a href="https://unpkg.com/bootstrap-table@{{ site.current_version }}/dist/">UNPKG</a>.</p>
+    <p>When you only need to include Bootstrap Table’s compiled CSS or JS, use <a href="https://unpkg.com/bootstrap-table@{{ bootstrap-table.current_version }}/dist/">UNPKG</a>.</p>
 
 {% highlight html %}
-<link rel="stylesheet" href="https://unpkg.com/bootstrap-table@{{ site.current_version }}/dist/bootstrap-table.min.css">
-<script src="https://unpkg.com/bootstrap-table@{{ site.current_version }}/dist/bootstrap-table.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-table@{{ bootstrap-table.current_version }}/dist/bootstrap-table.min.css">
+<script src="https://unpkg.com/bootstrap-table@{{ bootstrap-table.current_version }}/dist/bootstrap-table.min.js"></script>
 {% endhighlight %}
 
     <hr class="half-rule">
-    <a href="{{ site.baseurl }}/docs/api" class="btn btn-outline-primary">
+    <a href="{{ bootstrap-table.baseurl }}/docs/api" class="btn btn-outline-primary">
       Explore the docs
     </a>
   </div>
